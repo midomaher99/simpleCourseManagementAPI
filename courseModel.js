@@ -34,9 +34,6 @@ const courseSchema = new mongoose.Schema(
         timestamps: true
     }
 );
-//to do
-//1. check that image is url or base64
-//2. add update middleware to validate that end date is after start date
 
 const Course = mongoose.model('Course', courseSchema);
 
