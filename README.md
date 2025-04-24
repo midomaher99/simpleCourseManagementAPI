@@ -1,24 +1,24 @@
 # Simple Course Management API
 This is a very basic RESTfull API for courses management contains the main CRUD operations.
-## used technologies
+## Used technologies
 * NodeJS
 * Express.js
 * Mongodb
 ## End points
 There are five endpoints which we can use to do the CRUD operations.
-1. Get all courses
+1. **Get all courses**
     * http method: GET
     * Route: URL/api/courses
-2. Get course by id
+2. **Get course by id**
     * http method: GET
     * Route: URL/api/courses/:id
-3. Add new course
+3. **Add new course**
     * http method: POST
     * Route: URL/api/courses
-4. Update existing course
+4. **Update existing course**
     * http method: PUT
     * Route: URL/api/courses/:id
-5. Delete course by id
+5. **Delete course by id**
     * http method: DELETE
     * Route: URL/api/courses/:id
 ## Deployment
