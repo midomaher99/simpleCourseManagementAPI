@@ -1,7 +1,9 @@
+const dotEnv = require("dotenv")
+dotEnv.config({ path: `${__dirname}/config.env` })
 const mongoose = require('mongoose')
 const app = require(`./app`)
 
-const db = 'mongodb://127.0.0.1:27017/CourseManagement'
+const db = process.env.DATABASE
 mongoose.connect(db).then(() => { console.log("DB connected") })
 
 const server = app.listen(3000, () => {
